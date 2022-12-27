@@ -136,6 +136,11 @@ nav ul li{
     background-color: white;
 }
 
+.producto:hover{
+    transition: .5s;
+    transform: scale(1.15);
+}
+
 .info{
     display: flex;
     padding: 10px;
@@ -200,4 +205,92 @@ nav ul li{
 .copyright p{
     color: #7f818a;
     font-weight: 500;
+}
+
+
+
+
+                                         /****** MEDIA QUERIES ******/
+
+
+@media (min-width: 880px){
+    .contenedor-hijo-barras{
+        display: none;
+    }
+}
+
+
+@media (min-width: 350px) AND (max-width: 850px) {
+    .imagen-debajo-nav img{
+        height: 110px;
+    }
+
+
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .columna{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .productos img{
+        width: 100%;
+    }
+    .producto{
+        margin-bottom: 15px;
+    }
+    nav input{
+        width: 100%;
+    }
+
+
+    nav img{
+        width: 40%;
+    }
+
+    .asd{
+        display: none;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav p{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .icono-compra-cuotas{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    nav{
+        padding: 15px;
+    }
+
+
+    .contenedor-hijo-barras{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor-hijo-barras button{
+        width: 50px;
+        height: 30px;
+        background-color: #060252;
+        color: white;
+        border-radius: 10%;
+    }
+
+    
+
 }
